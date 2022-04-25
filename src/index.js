@@ -5,10 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
+import '@fontsource/raleway/400.css';
+import '@fontsource/open-sans/700.css';
+import theme from './components/theme';
+import { ChakraProvider } from '@chakra-ui/react';
+
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
-    <App />
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')
 );
