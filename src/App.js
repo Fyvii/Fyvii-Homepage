@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <VStack>
-      <Box className="navigation" w="100%" position="fixed" top={0}>
+      <Box className="navigation" w="100%" position="fixed" top={0} zIndex={2}>
         <Navbar />
       </Box>
       <Box className="information" w="100%" paddingTop="75px">

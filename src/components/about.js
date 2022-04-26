@@ -10,19 +10,8 @@ import {
 } from '@chakra-ui/react';
 import Works from './works';
 
+// This function is a reusable header component in our home page sections
 export function Bio(props) {
-  return (
-    <div>
-      <Heading size="md" as="u" color="green.400">
-        {props.header}
-      </Heading>
-      <Text paddingTop="20px" fontSize="lg">
-        {props.text}
-      </Text>
-    </div>
-  );
-}
-export function Biography(props) {
   return (
     <div>
       <Heading size="md" as="u" color="green.400">
@@ -54,7 +43,7 @@ function About() {
           text=" Welcome to my space! I'm a full-stack developer based in New Mexico
           with a passion for building digital spaces. I received my Bachelors
           Degree in biochemistry 🧬 from the University of New Mexico. I later
-          decided to drop medicine to pursuit my passion with coding 👾! When
+          decided to drop medicine to pursuit my passion in coding 👾! When
           I'm not online I love to capture film 🎞!"
         />
         <Bio

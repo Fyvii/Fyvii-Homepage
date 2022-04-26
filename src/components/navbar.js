@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { FaMoon, FaSun, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { GiDna2 } from 'react-icons/gi';
-
+// This handles our Dark/Light Mode Switch
 export const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('dark', 'light');
@@ -33,21 +33,31 @@ export const ColorModeSwitcher = props => {
 };
 
 function Navbar() {
+  // This method registers an external link to a new tab for our IconButtons
+  const handleLinkedIn = () => {
+    window.open('https://www.linkedin.com/in/noorkahalah/');
+  };
+
   return (
     <HStack justify="space-evenly" p={4}>
       <Box display="flex">
         <Icon as={GiDna2} />
         <Heading fontSize="xl">
-          <Link>Noor Kahalah</Link>
+          <Link to="/home">Noor Kahalah</Link>
         </Heading>
       </Box>
-      <Link>Works</Link>
-      <Link>Posts</Link>
-      <IconButton icon={<FaLinkedinIn />} colorScheme="blue" />
+      <Link to="/works">Works</Link>
+      <Link to="/posts">Posts</Link>
+      <IconButton
+        icon={<FaLinkedinIn />}
+        colorScheme="linkedin"
+        to="https://www.linkedin.com/in/noorkahalah/"
+        onClick={handleLinkedIn}
+      />
 
       <Box>
         <Icon as={FaGithub} />
-        <Link>Github Source</Link>
+        <Link href="https://github.com/Fyvii">Github Source</Link>
       </Box>
       <ColorModeSwitcher className="switch" />
     </HStack>
