@@ -1,19 +1,18 @@
 import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { VStack, Box } from '@chakra-ui/react';
+import Navbar from './components/navbar';
 import About from './components/about';
 
 function App() {
   return (
-    <Box>
-      <Box display="flex" justifyContent="flex-end" padding={3}>
-        <ColorModeSwitcher />
+    <VStack>
+      <Box className="header" w="100%">
+        <Navbar />
       </Box>
-      <Flex justify="space-evenly">
+      <Box className="information" w="100%">
         <About />
-        <About />
-      </Flex>
-    </Box>
+      </Box>
+    </VStack>
   );
 }
 
