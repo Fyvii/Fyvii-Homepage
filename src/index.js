@@ -5,8 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 
-import '@fontsource/raleway/400.css';
-import '@fontsource/open-sans/700.css';
+import '@fontsource/m-plus-rounded-1c/400.css';
 import theme from './components/theme';
 import { ChakraProvider } from '@chakra-ui/react';
 
