@@ -21,6 +21,18 @@ export function Bio(props) {
     </div>
   );
 }
+export function Biography(props) {
+  return (
+    <div>
+      <Heading size="md" as="u" color="green.400">
+        {props.header}
+      </Heading>
+      <Text paddingTop="20px" fontSize="lg">
+        {props.text}
+      </Text>
+    </div>
+  );
+}
 
 function About() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import './works.css';
-import { Box, VStack, Image, Badge, Link, Text } from '@chakra-ui/react';
+import { Box, VStack, Image, Badge, Link } from '@chakra-ui/react';
 
 function Works() {
   return (

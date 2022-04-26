@@ -41,9 +41,9 @@ function Navbar() {
           <Link>Noor Kahalah</Link>
         </Heading>
       </Box>
-
       <Link>Works</Link>
       <Link>Posts</Link>
+      <IconButton icon={<FaLinkedinIn />} colorScheme="blue" />
 
       <Box>
         <Icon as={FaGithub} />
