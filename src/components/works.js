@@ -5,7 +5,7 @@ import { Box, VStack, Image, Badge, Link } from '@chakra-ui/react';
 function Works() {
   return (
     <Box>
-      <VStack spacing="15px">
+      <VStack spacing="15px" paddingTop="5px" paddingBottom="5px">
         <Link href="/works">
           <Badge borderRadius="full" px="3" colorScheme="green" marginLeft={1}>
             RoboFriends

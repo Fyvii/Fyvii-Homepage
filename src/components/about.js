@@ -6,6 +6,7 @@ import {
   Image,
   VStack,
   HStack,
+  Box,
 } from '@chakra-ui/react';
 import Works from './works';
 
@@ -62,6 +63,13 @@ function About() {
         />
         <Bio header="Work" text="Checkout the latest project!"></Bio>
         <Works />
+
+        <Box>
+          <Bio
+            header="Socials"
+            text="Feel free to reach me or check out my other network platforms!"
+          />
+        </Box>
       </VStack>
     </Container>
   );

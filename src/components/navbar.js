@@ -34,7 +34,7 @@ export const ColorModeSwitcher = props => {
 
 function Navbar() {
   return (
-    <HStack justify="space-evenly" p={5}>
+    <HStack justify="space-evenly" p={4}>
       <Box display="flex">
         <Icon as={GiDna2} />
         <Heading fontSize="xl">
