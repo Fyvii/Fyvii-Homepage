@@ -33,7 +33,7 @@ function About() {
           <Image
             boxSize="85px"
             objectFit="cover"
-            borderRadius="full"
+            borderRadius="15px"
             src="https://i.pinimg.com/564x/93/e9/b2/93e9b2c063be5cea37ef6f751a68935c.jpg"
           ></Image>
         </HStack>
