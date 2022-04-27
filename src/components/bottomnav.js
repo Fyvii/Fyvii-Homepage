@@ -1,10 +1,4 @@
-import {
-  HStack,
-  Heading,
-  IconButton,
-  Tooltip,
-  Textarea,
-} from '@chakra-ui/react';
+import { HStack, Heading, IconButton, Tooltip } from '@chakra-ui/react';
 import {
   FaLinkedinIn,
   FaGithubAlt,
