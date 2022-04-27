@@ -1,5 +1,16 @@
-import { HStack, Heading, IconButton } from '@chakra-ui/react';
-import { FaLinkedinIn, FaGithubAlt, FaSpotify } from 'react-icons/fa';
+import {
+  HStack,
+  Heading,
+  IconButton,
+  Tooltip,
+  Textarea,
+} from '@chakra-ui/react';
+import {
+  FaLinkedinIn,
+  FaGithubAlt,
+  FaSpotify,
+  FaMicrosoft,
+} from 'react-icons/fa';
 import React from 'react';
 
 export const Bottom = () => {
@@ -42,6 +53,15 @@ export const Bottom = () => {
         colorScheme="green"
         onClick={handleSpotify}
       />
+
+      <Tooltip
+        id="tooltip"
+        value="nuur.dev@outlook.com"
+        label="nuur.dev@outlook.com"
+        fontSize="lg"
+      >
+        <IconButton icon={<FaMicrosoft />} colorScheme="facebook" />
+      </Tooltip>
     </HStack>
   );
 };

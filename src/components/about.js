@@ -29,7 +29,9 @@ function About() {
     <Container maxW="lg" h="100%" padding="15px">
       <VStack spacing="25px" align="start">
         <HStack>
-          <Heading paddingRight="10px">Noor Kahalah</Heading>
+          <Heading paddingRight="10px" casing="upper">
+            Noor Kahalah
+          </Heading>
           <Image
             boxSize="85px"
             objectFit="cover"
@@ -37,20 +39,20 @@ function About() {
             src="https://i.pinimg.com/564x/93/e9/b2/93e9b2c063be5cea37ef6f751a68935c.jpg"
           ></Image>
         </HStack>
-        <Text color="gray.500">Frontend Developer/Designer</Text>
+        <Text color="gray.500">Fullstack Developer/Designer</Text>
         <Bio
           header="Bio"
           text=" Welcome to my space! I'm a full-stack developer based in New Mexico
           with a passion for building digital spaces. I received my Bachelors
           Degree in biochemistry 🧬 from the University of New Mexico. I later
-          decided to drop medicine to pursuit my passion in coding 👾! When
-          I'm not online I love to capture film 🎞!"
+          decided to drop medicine to pursue my passion in coding 👾! When
+          I'm not online I love to capture film 🎞 and skateboard."
         />
         <Bio
           header="Hobbies"
           text="Music, Playing Guitar, Film Photography, Design, Skateboarding"
         />
-        <Bio header="Work" text="Checkout the latest project!"></Bio>
+        <Bio header="Work" text="Checkout the latest projects!"></Bio>
         <Works />
 
         <Box>

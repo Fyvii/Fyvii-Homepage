@@ -41,7 +41,7 @@ function Navbar() {
   return (
     <HStack justify="space-evenly" p={4}>
       <Box display="flex">
-        <Icon as={GiDna2} />
+        <Icon as={GiDna2} color="purple.400" />
         <Heading fontSize="xl">
           <Link to="/home">Noor Kahalah</Link>
         </Heading>
@@ -57,7 +57,9 @@ function Navbar() {
 
       <Box>
         <Icon as={FaGithub} />
-        <Link href="https://github.com/Fyvii">Github Source</Link>
+        <Link href="https://github.com/Fyvii/Fyvii-Homepage">
+          Github Source
+        </Link>
       </Box>
       <ColorModeSwitcher className="switch" />
     </HStack>
