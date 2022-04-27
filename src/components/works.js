@@ -5,7 +5,7 @@ import { Box, VStack, HStack, Image, Badge, Link } from '@chakra-ui/react';
 function Works() {
   return (
     <Box>
-      <HStack>
+      <HStack align="baseline">
         <VStack spacing="15px" paddingTop="5px" paddingBottom="5px">
           <Link href="/works">
             <Badge
@@ -38,6 +38,25 @@ function Works() {
           </Link>
           <Image
             src="https://i.pinimg.com/564x/f8/67/ee/f867ee8f3ffc6bdc2a6233d4237a7ee5.jpg"
+            objectFit="cover"
+            borderRadius="12px"
+            alt="facialrecognition"
+            className="robofriends"
+          ></Image>
+        </VStack>
+        <VStack spacing="15px" paddingTop="5px" paddingBottom="5px">
+          <Link href="/works">
+            <Badge
+              borderRadius="full"
+              px="3"
+              colorScheme="green"
+              marginLeft={1}
+            >
+              Nasa POD
+            </Badge>
+          </Link>
+          <Image
+            src="https://i.pinimg.com/564x/6e/06/bd/6e06bd3cf4fb660d53dc0b87ee228660.jpg"
             objectFit="cover"
             borderRadius="12px"
             alt="facialrecognition"
