@@ -10,7 +10,7 @@ import {
   HStack,
 } from '@chakra-ui/react';
 import { FaMoon, FaSun, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { GiDna2 } from 'react-icons/gi';
+
 // This handles our Dark/Light Mode Switch
 export const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
@@ -41,7 +41,6 @@ function Navbar() {
   return (
     <HStack justify="space-evenly" p={4}>
       <Box display="flex">
-        <Icon as={GiDna2} color="purple.400" />
         <Heading fontSize="xl">
           <Link to="/home">Noor Kahalah</Link>
         </Heading>

@@ -29,9 +29,7 @@ function About() {
     <Container maxW="lg" h="100%" padding="15px">
       <VStack spacing="25px" align="start">
         <HStack>
-          <Heading paddingRight="10px" casing="upper">
-            Noor Kahalah
-          </Heading>
+          <Heading paddingRight="10px">Noor Kahalah</Heading>
           <Image
             boxSize="85px"
             objectFit="cover"
@@ -45,7 +43,7 @@ function About() {
           text=" Welcome to my space! I'm a full-stack developer based in New Mexico
           with a passion for building digital spaces. I received my Bachelors
           Degree in biochemistry 🧬 from the University of New Mexico. I later
-          decided to drop medicine to pursue my passion in coding 👾! When
+          decided to drop medicine to pursue my passion in coding! When
           I'm not online I love to capture film 🎞 and skateboard."
         />
         <Bio
