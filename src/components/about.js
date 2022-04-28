@@ -17,7 +17,7 @@ export function Bio(props) {
       <Heading size="md" as="u" color="green.400">
         {props.header}
       </Heading>
-      <Text paddingTop="20px" fontSize="lg">
+      <Text paddingTop="20px" fontSize="15px">
         {props.text}
       </Text>
     </div>
@@ -37,7 +37,9 @@ function About() {
             src="https://i.pinimg.com/564x/93/e9/b2/93e9b2c063be5cea37ef6f751a68935c.jpg"
           ></Image>
         </HStack>
-        <Text color="gray.500">Fullstack Developer/Designer</Text>
+        <Text color="gray.500" fontSize="md">
+          Fullstack Developer/Designer
+        </Text>
         <Bio
           header="Bio"
           text=" Welcome to my space! I'm a full-stack developer based in New Mexico
