@@ -50,6 +50,9 @@ function Navbar(props) {
   const handleLinkedIn = () => {
     window.open('https://www.linkedin.com/in/noorkahalah/');
   };
+  const handleGithub = () => {
+    window.open('https://github.com/Fyvii');
+  };
 
   return (
     <HStack justify="space-between" p={4}>
@@ -72,30 +75,33 @@ function Navbar(props) {
         <IconButton
           icon={<FaLinkedinIn />}
           colorScheme="linkedin"
-          to="https://www.linkedin.com/in/noorkahalah/"
           onClick={handleLinkedIn}
         />
       </Show>
       <Show above="md">
         <Box>
           <Icon as={FaGithub} />
-          <Link href="https://github.com/Fyvii/Fyvii-Homepage">
-            Github Source
-          </Link>
+          <Link href="https://github.com/Fyvii">Github Source</Link>
         </Box>
       </Show>
       <HStack>
         <Show below="md">
           <Menu>
-            <MenuButton as={Button} color="current">
+            <MenuButton as={Button} colorScheme="green">
               <Icon as={HamburgerIcon}></Icon>
             </MenuButton>
             <MenuList>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>Works</MenuItem>
-              <MenuItem>Posts</MenuItem>
-              <MenuItem>LinkedIn</MenuItem>
-              <MenuItem>Github Source</MenuItem>
+              <MenuItem as={Link} href="/">
+                Home
+              </MenuItem>
+              <MenuItem as={Link} href="/works">
+                Works
+              </MenuItem>
+              <MenuItem as={Link} href="/posts">
+                Posts
+              </MenuItem>
+              <MenuItem onClick={handleLinkedIn}>LinkedIn</MenuItem>
+              <MenuItem onClick={handleGithub}>Github Source</MenuItem>
             </MenuList>
           </Menu>
         </Show>
